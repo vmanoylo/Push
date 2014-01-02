@@ -1,0 +1,46 @@
+¦¦¦¦¦¦  ¦    ¦  ¦¦¦¦¦¦  ¦    ¦
+¦    ¦  ¦    ¦  ¦       ¦    ¦
+¦    ¦  ¦    ¦  ¦       ¦    ¦
+¦¦¦¦¦¦  ¦    ¦  ¦¦¦¦¦¦  ¦¦¦¦¦¦
+¦       ¦    ¦       ¦  ¦    ¦
+¦       ¦    ¦       ¦  ¦    ¦
+¦       ¦¦¦¦¦¦  ¦¦¦¦¦¦  ¦    ¦
+
+
+Players take turns moving, player 1 starts
+once a player cannot move any pieces, they lose
+
+players start with
+  -4 soldiers that can be pushed forward, backward, left or right
+  -5 scouts that can be pushed in any diagonal
+  -2 general that can be pushed in all 8 directions
+
+there are also 3 machines, which do not have a team 
+and can only be pushed by other pieces
+  -Tower, which will push every piece in front of a direction it moves
+  -Wall, which will push every piece in a line it is pushed to
+         the line is perpendicular to the direction it was pushed
+  -Ram, which will move in the direction it is pushed until
+        it hits something or leaves the board
+        if it hits a piece, it will push with strength equal to 
+        how far it was pushed
+
+a machine can be placed anywhere on the board by a player, 
+  if that player doesn't already have a machine on the board
+  and can give away a piece his opponent has lost
+
+to move a piece
+  click on a piece: if that piece can be pushed, arrows will show up 
+                    in the top right corner of the screen
+  click on an arrow pointing in the direction you want to move the piece
+
+##### PUSHING PIECES #####
+moving a piece is equivalent 
+to pushing that piece with a piece from the same team and strength 1
+
+piece A is pushed into piece B with X strength
+  if A is on the same team as B, B moves one space and 
+      pu3hes the next piece with X+1 strength
+  if A is not on the same team as B, B becomes teamless for the rest
+      of the turn, and moves X spaces, pushing with 1 strength each time
+
